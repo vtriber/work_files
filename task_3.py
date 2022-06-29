@@ -17,5 +17,5 @@ for filename in os.listdir("task_3"):
 pprint(sorted(result_dict.items()))
 with open("result.txt", 'a') as file:
     for line_dict in result_dict:
-        for line_list in line_dict:
-            file.write()
+
+            file.write(line)
