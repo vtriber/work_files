@@ -24,9 +24,9 @@ def get_shop_list_by_dishes(dishes, person_count):
         for ingredient in cook_book_dict[dish]:
             # print(ingredient)
             if ingredient['ingredient_name'] in shop_list.keys():
-                s_l = shop_list.values()
-                print(s_l)
-                shop_list.update({ingredient['ingredient_name']: {'measure': ingredient['measure'], 'quantity': ingredient['quantity'] * person_count}})
+                amount = shop_list.values()
+                print(amount)
+
 
             else:
                 shop_list.update({ingredient['ingredient_name']: {'measure': ingredient['measure'], 'quantity': ingredient['quantity'] * person_count}})
